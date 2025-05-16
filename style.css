@@ -1,0 +1,186 @@
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #8B8B8B;
+    line-height: 1.3;
+    text-align: center;
+    background-color: #FAFAFA;
+    margin: 0;
+}
+
+main {
+    padding: 60px 20px;
+}
+
+h1, h2 {
+    font-weight: 500;
+    color: black;
+    padding: 0;
+}
+
+h1 {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    height: 2px;
+    background-color: #407BFF;
+}
+    
+
+h2 {
+    font-size: 16px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+
+button {
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    padding: 10px 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border: 0;
+    margin-bottom: 10px;
+    font-family: inherit;
+}
+
+.but-modry {
+    background-color: #407BFF;
+}
+
+.but-sedy {
+    background-color: #8B8B8B;
+}
+
+.ramecek {
+    margin: 15px auto;
+    background-color: white;
+    box-shadow: 0px 4px 6px #407BFF1F;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 13px;
+    text-align: left;
+    display: flex;
+    gap: 30px;
+}
+
+.cestovatel {
+    width: 100%;
+    max-width: 350px;
+}
+
+.ramecek img {
+    height: 40px;
+    flex: 0 0 50px;
+}
+
+.ramecek p {
+    flex: 1 1 auto;
+    margin-bottom: 0;
+}
+
+.odstavec {
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 640px) {
+    .cestovatel  {
+        max-width: 400px;
+    }
+
+    h1 {
+        margin-top: 30px;
+    }
+
+    button {
+        display: inline-block;
+    }
+
+    .but-modry {
+        margin-right: 20px;
+    }
+
+    .sada-ramecku {
+        display: flex;
+        gap: 20px;
+    }
+
+    .ramecek {
+        display: block;
+        text-align: center;
+        padding: 40px 15px;
+        flex: 1 1 calc(100% / 3);
+    }
+
+    .odstavec {
+        max-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    body {
+        text-align: left;
+    }
+    
+    main {
+        max-width: 1040px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 60px 0;
+    }
+
+    .horni, .prostredni, .dolni {
+        display: flex;
+        gap: 60px;
+    }
+
+    .horni, .prostredni {
+        margin-bottom: 80px;
+    }
+
+    .cestovatel, .text-horni {
+        flex: 0 0 490px;
+    }
+
+    .cestovatel {
+        max-width: 425px;
+        order: 1;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1::after {
+        margin-left: 0;
+    }
+
+    .sada-ramecku {
+        flex: 0 0 550px;
+    }
+
+    .text-prostredni, .text-dolni {
+        flex: 0 0 430px;
+    }
+
+    .text-prostredni {
+        order: 1;
+    }
+}
